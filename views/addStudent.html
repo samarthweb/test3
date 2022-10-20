@@ -1,0 +1,43 @@
+<!-- registerUser.html -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Add Student</title>
+        <style>
+            .center {
+                width : 50%;
+                margin: auto;
+                padding: 10px;
+                border: dotted black 2px;
+               
+            }
+            .new{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="new"><h1> Add student </h1> </div>
+        
+        <div class = "center">
+        <h3> Student Information </h3>
+        <form name="register" method = "post" 
+        enctype = "application/x-www-form-urlencoded"
+             action = "/register-user">
+             <!-- enctype = "multipart/form-data" -->
+
+            <p> Student ID: <input type = "text" name = "id"> </p>
+            <p> Student Name: <input type = "text" name = "Name"> </p>
+            
+            <p> Program: <select><option value="BSD"> </option>
+                <option value="BSD">BSD</option>
+                <option value="CPA">CPA</option>
+                <option value="DSA">DSA</option></select> </p>
+            <p> Gpa: <input type = "text" name = ""> </p>
+           <!--  <p> Photo: <input type = "file" name = "photo"> </p> <br> -->
+            <p> <input type = "submit" value = "Add Student"> 
+                <input type = "reset"> </p>
+        </form>
+    </div>
+    </body>
+</html>

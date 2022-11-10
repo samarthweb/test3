@@ -10,21 +10,7 @@ function onHttpStart()
 
 app.get("/",(req,res)=>{
     let resText = "<h2>Declaration (text size in heading 2): </h2> ";
-    resText += "<p> The rest text is displayed in paragraph as shown in screenshot. </p>";
-    resText += " <p> I acknowledge the College’s academic integrity policy – and my own integrity ";
-    resText += "– remain in effect whether my work is done remotely or onsite.";
-    resText += " Any test or assignment is an act of trust between me and my instructor, ";
-    resText += " and especially with my classmates… even when no one is watching.";
-    resText += " I declare I will not break that trust. </p>";
-    
-    resText += "<p>Name: <mark> <b> Samarth Patel </b> </mark> </p>";
-    resText += "<p>Student Number: <mark><b> 150061208 </b> </mark> </p>";
-    
-    resText += `<ul><p> <a href = "/CPA"> CPA Students </a></p>
-                <p> <a href = "/highGPA"> highest GPA </a></p>
-                <p><a href='/allStudents'>All students</a><p>
-                <p> <a href = "/addstudent"> Add a new student </a></p></ul>
-                <p>Note: Locate specific student by student Id, e.g.,<p>
+     student Id, e.g.,<p>
                 <p>http://localhost:8080/student/3<p>`
                 
     res.send(resText);
